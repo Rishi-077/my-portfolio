@@ -1,12 +1,14 @@
-import './App.css'
+import "./App.css";
+import PageRoute from "./routes/pageRoute";
 
 function App() {
-
   return (
     <>
-      <h1>Rishi</h1>
+      <div>
+        <PageRoute />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
