@@ -1,0 +1,9 @@
+.home_container {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-image: url("../../assets/images/h1_hero.png.webp") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
