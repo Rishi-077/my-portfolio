@@ -38,16 +38,16 @@ function Navbar() {
               className={`${styles.nav_route_active}  d-md-none d-block`}
             >
               <ul className={`${styles.nav_ul}`}>
-                <li>
+                <li onClick={() => setNav(!nav)}>
                   <Link>Home</Link>
                 </li>
-                <li>
+                <li onClick={() => setNav(!nav)}>
                   <Link>Work</Link>
                 </li>
-                <li>
+                <li onClick={() => setNav(!nav)}>
                   <Link>Service</Link>
                 </li>
-                <li>
+                <li onClick={() => setNav(!nav)}>
                   <Link>Contact</Link>
                 </li>
               </ul>
