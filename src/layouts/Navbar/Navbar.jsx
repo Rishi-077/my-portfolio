@@ -4,10 +4,7 @@ import { Link } from "react-scroll";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
-  console.log(nav);
 
-  // const df = useRef();
-  // console.log(df.current.clientHeight);
   return (
     <>
       <nav>
@@ -35,7 +32,7 @@ function Navbar() {
                 maxHeight: nav ? "200px" : 0,
                 transition: "max-height 0.5s ease-in-out",
               }}
-              className={`${styles.nav_route_active}  d-md-none d-block`}
+              className={`${styles.nav_route_active} d-md-none d-block`}
             >
               <ul className={`${styles.nav_ul}`}>
                 <li onClick={() => setNav(!nav)}>
