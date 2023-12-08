@@ -1,6 +1,6 @@
 .home_container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   box-sizing: border-box;
   background-image: url("../../assets/images/h1_hero.png.webp") !important;
   background-repeat: no-repeat;
@@ -8,9 +8,10 @@
   background-attachment: fixed;
 }
 
-.home_parent_div{
+.home_parent_div {
   padding-top: 150px;
 }
+
 .home_img_div {
   width: 350px;
   height: 350px;
@@ -43,4 +44,293 @@
   font-size: 28px !important;
   font-weight: 500 !important;
   color: var(--black-color);
+}
+
+/* details */
+
+.home_details h6 {
+  font-family: "Roboto Condensed", sans-serif !important;
+  font-size: 22px;
+  color: var(--white-color);
+  font-weight: 400;
+}
+
+.home_details h3 {
+  font-family: "Roboto Condensed", sans-serif !important;
+  /* font-size: 20px; */
+  color: var(--white-color);
+  font-weight: 400;
+}
+
+.home_details a {
+  font-family: "Roboto Condensed", sans-serif !important;
+  color: var(--white-color);
+  font-weight: 400;
+}
+
+.icon_div {
+  font-family: "Roboto Condensed", sans-serif !important;
+  font-size: 25px;
+  color: var(--white-color);
+  font-weight: 400;
+  border: 2px solid var(--white-color);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_detail_parent {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.hamburger_menu {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .icon_div {
+    font-family: "Roboto Condensed", sans-serif !important;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .home_details h6 {
+    font-family: "Roboto Condensed", sans-serif !important;
+    font-size: 18px;
+    color: var(--white-color);
+    font-weight: 400;
+  }
+
+  .home_details h3 {
+    font-family: "Roboto Condensed", sans-serif !important;
+    font-size: 25px;
+    color: var(--white-color);
+    font-weight: 400;
+  }
+
+  .home_details a {
+    font-family: "Roboto Condensed", sans-serif !important;
+    color: var(--white-color);
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .icon_div {
+    font-family: "Roboto Condensed", sans-serif !important;
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .home_parent_div {
+    padding-top: 20px;
+  }
+
+  .home_img_div {
+    width: 270px;
+    height: 270px;
+    min-width: 270px;
+    min-height: 270px;
+    border: 3px solid var(--white-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home_img_div img {
+    width: 250px;
+    height: 250px;
+    min-width: 250px;
+    min-height: 250px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: white;
+    filter: grayscale(2);
+  }
+
+  .home_content_div h1 {
+    font-family: "Roboto Condensed", sans-serif !important;
+    font-size: 45px !important;
+    font-weight: 400 !important;
+    color: white;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+
+  .home_content_div h6 {
+    font-size: 23px !important;
+    font-weight: 500 !important;
+    color: var(--black-color);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home_parent_div {
+    padding-top: 80px;
+  }
+
+  .home_img_div {
+    width: 220px;
+    height: 220px;
+    border: 3px solid var(--white-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home_img_div img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: white;
+    filter: grayscale(2);
+  }
+
+  .home_content_div h1 {
+    font-family: "Roboto Condensed", sans-serif !important;
+    font-size: 45px !important;
+    font-weight: 400 !important;
+    color: white;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+
+  .home_content_div h6 {
+    font-size: 23px !important;
+    font-weight: 500 !important;
+    color: var(--black-color);
+  }
+
+  /* details */
+  .home_details h6 {
+    font-family: "Roboto Condensed", sans-serif !important;
+    font-size: 20px;
+    color: var(--white-color);
+    font-weight: 400;
+  }
+
+  .home_details h3 {
+    font-family: "Roboto Condensed", sans-serif !important;
+    font-size: 17px;
+    color: var(--white-color);
+    font-weight: 400;
+  }
+
+  .home_details a {
+    font-family: "Roboto Condensed", sans-serif !important;
+    color: var(--white-color);
+    font-weight: 400;
+  }
+
+  /* .hamburger_div {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      left: 50%;
+      top: 25%;
+      transform: translate(-50%, -25%);
+    } */
+
+  .nav_div_parent {
+    width: 100%;
+    /* height: 140px ; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px 0px;
+    position: relative;
+  }
+
+  .hamburger_menu {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, 0%);
+    z-index: 99;
+    background-color: var(--dark-color);
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+  }
+
+  .hamburger_menu button {
+    background-color: var(--dark-color-1);
+    padding: 6px;
+    border: none;
+    color: var(--white-color);
+    border-radius: 4px;
+    font-weight: 600;
+  }
+
+  .bar {
+    width: 20px;
+    height: 2px;
+    background-color: var(--white-color);
+    margin: 3px 0;
+    border-radius: 2px;
+  }
+
+  .nav_route {
+    width: 100%;
+    max-height: 0;
+    transition: max-height 0.15s ease-out;
+    overflow: hidden;
+  }
+  /* 
+    .nav_route ul {
+      display: none;
+    } */
+
+  .nav_route_active {
+    width: 100%;
+    max-height: 500px;
+    transition: max-height 0.25s ease-in;
+    overflow: hidden;
+    background-color: var(--dark-color);
+    transition: 0.3s;
+  }
+
+  .nav_route_active ul {
+    padding: 0px;
+    margin: 0px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    display: block;
+    color: var(--white-color);
+    clear: both;
+  }
+
+  .nav_route_active ul li {
+    padding: 0px;
+    margin: 0px;
+    list-style: none !important;
+    font-size: 15px;
+    padding: 10px 25px;
+    font-family: "Roboto Condensed", sans-serif !important;
+    cursor: pointer;
+  }
+
+  .nav_route_active ul li:hover {
+    background-color: var(--white-color);
+    color: var(--dark-color-1);
+  }
+
+  .nav_route ul li a {
+    display: inline-block;
+    position: relative;
+    color: var(--white-color);
+  }
 }
