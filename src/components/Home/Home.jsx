@@ -1,56 +1,11 @@
-import { Link } from "react-scroll";
 import images from "../../constants";
-import Navbar from "../../layouts/Navbar/Navbar";
 import styles from "./Home.module.css";
 import { IoMailOutline } from "react-icons/io5";
-import { useState } from "react";
 
 const Home = () => {
-  const [nav, setNav] = useState(false);
-
   return (
     <>
-      <section className={`container-fluid ${styles.home_container}`}>
-        <Navbar />
-
-        <div className={`position-relative`}>
-          <div className={`${styles.hamburger_menu}`}>
-            <button
-              className="d-flex align-items-center"
-              onClick={() => setNav(!nav)}
-            >
-              <span className="uc px-1">Menu</span>{" "}
-              <div>
-                <div className={`${styles.bar}`}></div>
-                <div className={`${styles.bar}`}></div>
-                <div className={`${styles.bar}`}></div>
-              </div>
-            </button>
-
-            <div
-              style={{
-                maxHeight: nav ? "200px" : 0,
-                transition: "max-height 0.5s ease-in-out",
-              }}
-              className={`${styles.nav_route_active} d-md-none d-block`}
-            >
-              <ul className={`${styles.nav_ul}`}>
-                <li onClick={() => setNav(!nav)}>
-                  <Link>Home</Link>
-                </li>
-                <li onClick={() => setNav(!nav)}>
-                  <Link>Work</Link>
-                </li>
-                <li onClick={() => setNav(!nav)}>
-                  <Link>Service</Link>
-                </li>
-                <li onClick={() => setNav(!nav)}>
-                  <Link>Contact</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <section>
 
         <div className={"row " + styles.home_parent_div}>
           <div className="col-md-5 col-12 d-flex align-items-center justify-content-md-end justify-content-start">
