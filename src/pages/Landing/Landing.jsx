@@ -6,7 +6,7 @@ import styles from "./Landing.module.css";
 function Landing() {
   return (
     <div>
-      <div className={`container-fluid ${styles.home_container}`}>
+      <div className={`container-fluid px-0 ${styles.home_container}`}>
         <Navbar />
         <Home />
       </div>

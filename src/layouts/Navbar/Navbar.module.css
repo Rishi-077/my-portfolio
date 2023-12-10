@@ -8,6 +8,24 @@
   background-attachment: fixed;
 }
 
+.nav_container_color {
+  background-color: var(--orange-color);
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  z-index: 999;
+  transition: 0.3s;
+}
+
+.nav_container {
+  /* background-color: var(--orange-color); */
+  /* position: fixed; */
+  width: 100%;
+  height: 90px;
+  z-index: 999;
+  transition: 0.3s;
+}
+
 .nav_div_parent {
   display: flex;
   justify-content: space-between;
@@ -108,15 +126,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  /* .hamburger_div {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    left: 50%;
-    top: 25%;
-    transform: translate(-50%, -25%);
-  } */
-
   .nav_div_parent {
     width: 100%;
     /* height: 140px ; */

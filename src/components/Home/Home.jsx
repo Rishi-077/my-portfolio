@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <section>
 
-        <div className={"row " + styles.home_parent_div}>
+        <div className={"row mx-0 " + styles.home_parent_div}>
           <div className="col-md-5 col-12 d-flex align-items-center justify-content-md-end justify-content-start">
             <div className={`${styles.home_img_div} me-lg-5 me-0`}>
               <img src={images.profile} alt="img" />
@@ -26,7 +26,7 @@ const Home = () => {
         </div>
 
         <div className={"container " + styles.home_detail_parent}>
-          <div className="row">
+          <div className="row mx-0">
             <div className="col-lg-4 col-12 d-flex justicy-content-center">
               <div className={`${styles.home_details}`}>
                 <h6>Development</h6>
