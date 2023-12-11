@@ -1,3 +1,4 @@
+import About from "../../components/About/About";
 import Home from "../../components/Home/Home";
 import Work from "../../components/Work/Work";
 import Navbar from "../../layouts/Navbar/Navbar";
@@ -11,6 +12,7 @@ function Landing() {
         <Home />
       </div>
       <Work />
+      <About />
     </div>
   );
 }
