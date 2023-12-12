@@ -25,7 +25,7 @@ function Navbar() {
         >
           <div className={`${styles.nav_div_parent}`}>
             <div className={`${styles.nav_brand}`}>
-              <h5 className="">Rishi.</h5>
+              <h5 className="mb-0">Rishi.</h5>
             </div>
 
             <div className={`${styles.nav_route}  d-md-block d-none`}>

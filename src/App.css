@@ -106,3 +106,38 @@ body {
 .fw-800 {
   font-weight: 800 !important;
 }
+
+/* common */
+
+.swiper {
+  padding: 100px 0px !important;
+}
+
+.swiper-wrapper {
+  padding: 0 100px !important;
+}
+
+@media screen and (max-width: 992px) {
+  .swiper-slide {
+    width: fit-content !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .swiper-wrapper {
+    padding: 0 0px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .swiper-slide {
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .swiper {
+    padding: 100px 0 30px 0 !important;
+  }
+}

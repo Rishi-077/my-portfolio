@@ -1,16 +1,46 @@
 import styles from "./About.module.css";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
-// import "swiper/css/pagination";
-// import "swiper/css/navigation";
-
-// import required modules
 import { Autoplay } from "swiper/modules";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import images from "../../constants/images";
 
 function About() {
+  const df = useRef();
+  const [count, setCount] = useState(0);
+  const [isIntersecting, setIsIntersecting] = useState(false);
+
+  const observer = useMemo(
+    () =>
+      new IntersectionObserver(([entry]) =>
+        setIsIntersecting(entry.isIntersecting)
+      ),
+    []
+  );
+
+  const changeScreen = useCallback(() => {
+    // setWidth(window.screen.width);
+
+    if (window.screen.width < 400) {
+      setCount(1);
+    } else if (window.screen.width >= 400 && window.screen.width < 576) {
+      setCount(3);
+    } else {
+      setCount(6);
+    }
+    console.log(count);
+  }, [count]);
+
+  useEffect(() => {
+    changeScreen();
+    observer.observe(df.current);
+    return () => {
+      observer.disconnect();
+    };
+  }, [df, observer, changeScreen]);
+
+  window.addEventListener("resize", changeScreen);
+
   return (
     <>
       <section className={`${styles.about_container_div}`}>
@@ -33,7 +63,10 @@ function About() {
               </div>
             </div>
 
-            <div className="col-md-6 mt-md-0 mt-5 col-12 d-flex align-items-center">
+            <div
+              className="col-md-6 mt-md-0 mt-5 col-12 d-flex align-items-center"
+              ref={df}
+            >
               <div className={`${styles.about_range_div} w-100`}>
                 <div>
                   <div
@@ -43,7 +76,9 @@ function About() {
                     <p>90%</p>
                   </div>
                   <div className={`${styles.skill_bar}`}>
-                    <div className={`${styles.skill_react}`}></div>
+                    <div
+                      className={`${isIntersecting ? styles.skill_react : ""}`}
+                    ></div>
                   </div>
                 </div>
 
@@ -55,7 +90,11 @@ function About() {
                     <p>50%</p>
                   </div>
                   <div className={`${styles.skill_bar}`}>
-                    <div className={`${styles.skill_angular}`}></div>
+                    <div
+                      className={`${
+                        isIntersecting ? styles.skill_angular : ""
+                      }`}
+                    ></div>
                   </div>
                 </div>
 
@@ -67,7 +106,11 @@ function About() {
                     <p>70%</p>
                   </div>
                   <div className={`${styles.skill_bar}`}>
-                    <div className={`${styles.skill_javascript}`}></div>
+                    <div
+                      className={`${
+                        isIntersecting ? styles.skill_javascript : ""
+                      }`}
+                    ></div>
                   </div>
                 </div>
               </div>
@@ -75,10 +118,10 @@ function About() {
           </div>
 
           <div className="row">
-            <div className="col-12">
+            <div className="col-12 px-sm-0 px-5">
               <Swiper
-                slidesPerView={1}
-                spaceBetween={30}
+                slidesPerView={count}
+                spaceBetween={window.screen.width < 400 ? 10 : 30}
                 centeredSlides={true}
                 loop={true}
                 autoplay={{
@@ -89,13 +132,111 @@ function About() {
                 className="mySwiper"
               >
                 <SwiperSlide>
-                  <div className={`card ${styles.swiper_card}`}>
-                    <div
-                      className={`card-body ${styles.swiper_card_body}`}
-                    >
+                  <div className={`card h-100 ${styles.swiper_card}`}>
+                    <div className={`card-body ${styles.swiper_card_body}`}>
                       <div className={`${styles.swiper_img_div}`}>
-                        <img src={``} alt="" />
+                        <img src={images.html} alt="img" />
                       </div>
+                      <h6>HTML</h6>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className={`card h-100 ${styles.swiper_card}`}>
+                    <div className={`card-body ${styles.swiper_card_body}`}>
+                      <div className={`${styles.swiper_img_div}`}>
+                        <img src={images.css} alt="img" />
+                      </div>
+                      <h6>CSS</h6>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className={`card h-100 ${styles.swiper_card}`}>
+                    <div className={`card-body ${styles.swiper_card_body}`}>
+                      <div className={`${styles.swiper_img_div}`}>
+                        <img src={images.bootstrap} alt="img" />
+                      </div>
+                      <h6>Bootstrap</h6>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className={`card h-100 ${styles.swiper_card}`}>
+                    <div className={`card-body ${styles.swiper_card_body}`}>
+                      <div className={`${styles.swiper_img_div}`}>
+                        <img src={images.js} alt="img" />
+                      </div>
+                      <h6>Javascript</h6>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className={`card h-100 ${styles.swiper_card}`}>
+                    <div className={`card-body ${styles.swiper_card_body}`}>
+                      <div className={`${styles.swiper_img_div}`}>
+                        <img src={images.react} alt="img" />
+                      </div>
+                      <h6>ReactJs</h6>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className={`card h-100 ${styles.swiper_card}`}>
+                    <div className={`card-body ${styles.swiper_card_body}`}>
+                      <div className={`${styles.swiper_img_div}`}>
+                        <img src={images.redux} alt="img" />
+                      </div>
+                      <h6>Redux</h6>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className={`card h-100 ${styles.swiper_card}`}>
+                    <div className={`card-body ${styles.swiper_card_body}`}>
+                      <div className={`${styles.swiper_img_div}`}>
+                        <img src={images.angular} alt="img" />
+                      </div>
+                      <h6>Angular</h6>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className={`card h-100 ${styles.swiper_card}`}>
+                    <div className={`card-body ${styles.swiper_card_body}`}>
+                      <div className={`${styles.swiper_img_div}`}>
+                        <img src={images.ts} alt="img" />
+                      </div>
+                      <h6>Typescript</h6>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className={`card h-100 ${styles.swiper_card}`}>
+                    <div className={`card-body ${styles.swiper_card_body}`}>
+                      <div className={`${styles.swiper_img_div}`}>
+                        <img src={images.git} alt="img" />
+                      </div>
+                      <h6>Git</h6>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className={`card h-100 ${styles.swiper_card}`}>
+                    <div className={`card-body ${styles.swiper_card_body}`}>
+                      <div className={`${styles.swiper_img_div}`}>
+                        <img src={images.github} alt="img" />
+                      </div>
+                      <h6>GitHub</h6>
                     </div>
                   </div>
                 </SwiperSlide>
