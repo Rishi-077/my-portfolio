@@ -1,4 +1,5 @@
 import About from "../../components/About/About";
+import Footer from "../../components/Footer/Footer";
 import Home from "../../components/Home/Home";
 import Work from "../../components/Work/Work";
 import Navbar from "../../layouts/Navbar/Navbar";
@@ -13,6 +14,7 @@ function Landing() {
       </div>
       <Work />
       <About />
+      <Footer />
     </div>
   );
 }
