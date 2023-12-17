@@ -62,7 +62,7 @@ const Home = () => {
                 <div className="me-3  text-end">
                   <h6 className={`${styles.email_h6}`}>Drop your Message</h6>
                   <h3 className={`${styles.email_h3}`}>
-                    <a href="rishikesan070@gmail.com">
+                    <a href="mailto:rishikesan070@gmail.com">
                       rishikesan070@gmail.com
                     </a>
                   </h3>

@@ -32,7 +32,14 @@ function Footer() {
             </div>
             <div className="col-md-6 mt-md-0 mt-5 d-flex align-items-center justify-content-center">
               <div>
-                <button className={`${styles.btn_cv}`}>Download CV</button>
+                <a
+                  href="https://drive.google.com/file/d/1ujaVRApBKOsH_icXyKRerEsa24y6jOBy/view?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={`${styles.btn_cv}`}
+                >
+                  Download CV
+                </a>
                 <button className={`${styles.btn_talk}`}>
                   Let&apos;s Talk
                 </button>
@@ -42,7 +49,9 @@ function Footer() {
 
           <div className="row py-5">
             <div className="col-md-6 order-md-1 order-2">
-              <p className={`${styles.copyright_p} text-md-start text-center mb-0`}>
+              <p
+                className={`${styles.copyright_p} text-md-start text-center mb-0`}
+              >
                 Copyright ©2023 All rights reserved | made with ❤️ by{" "}
                 <span>Rishi.</span>
               </p>

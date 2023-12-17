@@ -41,6 +41,7 @@
   border-radius: 30px;
   letter-spacing: 1px;
   margin-right: 20px;
+  text-decoration: none !important;
 }
 
 .btn_talk {
@@ -60,7 +61,7 @@
   color: var(--white-color);
 }
 
-.copyright_p span{
+.copyright_p span {
   font-size: 14px;
   color: var(--orange-color);
 }
@@ -110,7 +111,6 @@
   transform-origin: bottom left;
 }
 
-
 @media screen and (max-width: 400px) {
   .footer_nav_ul {
     display: flex;
@@ -122,7 +122,6 @@
   .footer_nav_ul li {
     margin-bottom: 20px;
   }
-  
 
   .btn_cv {
     background-color: transparent;
@@ -135,7 +134,7 @@
     letter-spacing: 1px;
     margin-right: 20px;
   }
-  
+
   .btn_talk {
     background-color: var(--orange-color);
     border: 2px solid var(--orange-color);
@@ -146,5 +145,4 @@
     border-radius: 30px;
     margin-top: 20px;
   }
-  
 }

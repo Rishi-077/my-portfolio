@@ -1,4 +1,5 @@
 import About from "../../components/About/About";
+import Contact from "../../components/Contact/Contact";
 import Footer from "../../components/Footer/Footer";
 import Home from "../../components/Home/Home";
 import Work from "../../components/Work/Work";
@@ -14,6 +15,7 @@ function Landing() {
       </div>
       <Work />
       <About />
+      <Contact />
       <Footer />
     </div>
   );
