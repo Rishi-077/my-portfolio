@@ -59,6 +59,7 @@
   list-style: none !important;
   font-size: 17px;
   padding: 0px 25px;
+
   font-family: "Roboto Condensed", sans-serif !important;
   cursor: pointer;
 }
@@ -81,11 +82,13 @@
   background-color: var(--white-color);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
+  text-decoration: none !important;
   /* color: var(--white-color); */
 }
 
 .nav_route ul li a:hover:after {
   transform: scaleX(1);
+  text-decoration: none !important;
   transform-origin: bottom left;
 }
 
@@ -218,12 +221,19 @@
 
   .nav_route_active ul li:hover {
     background-color: var(--white-color);
-    color: var(--dark-color-1);
   }
 
-  .nav_route ul li a {
+  .nav_route_active ul li a {
     display: inline-block;
     position: relative;
-    color: var(--white-color);
+    color: var(--white-color) !important;
+    text-decoration: none !important;
+    display: block;
+    width: 100%;
+  }
+
+  .nav_route_active ul li:hover  a span {
+    background-color: var(--white-color);
+    color: var(--dark-color-1) !important;
   }
 }
