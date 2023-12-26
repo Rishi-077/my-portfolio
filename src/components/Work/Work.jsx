@@ -10,12 +10,14 @@ function Work() {
           {data.map((d, i) => (
             <div className="col-sm-6 col-12 py-3" key={i}>
               <div className={`${styles.card}`}>
-                <img src={d.img} alt="img" />
-                {d.direction.map((el) => (
-                  <div key={el} className={`${styles.inner_card}`}>
-                    <h6>{el}</h6>
-                  </div>
-                ))}
+                <a href={d.link} target="_blank" rel="noreferrer">
+                  <img src={d.img} alt="img" />
+                  {d.direction.map((el) => (
+                    <div key={el} className={`${styles.inner_card}`}>
+                      <h6>{el}</h6>
+                    </div>
+                  ))}
+                </a>
               </div>
             </div>
           ))}
