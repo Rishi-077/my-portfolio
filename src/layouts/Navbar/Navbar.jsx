@@ -141,8 +141,9 @@ function Navbar() {
                 className={`${styles.nav_route_active} d-md-none d-block`}
               >
                 <ul className={`${styles.nav_ul}`}>
-                  <li onClick={() => setNav(!nav)}>
+                  <li>
                     <Link
+                      onClick={() => setNav(!nav)}
                       activeClass="active"
                       style={{ cursor: "pointer", textDecoration: "none" }}
                       to="home"
@@ -154,8 +155,9 @@ function Navbar() {
                       <span>Home</span>
                     </Link>
                   </li>
-                  <li onClick={() => setNav(!nav)}>
+                  <li>
                     <Link
+                      onClick={() => setNav(!nav)}
                       activeClass="active"
                       style={{ cursor: "pointer", textDecoration: "none" }}
                       to="work"
@@ -167,8 +169,9 @@ function Navbar() {
                       <span>Work</span>
                     </Link>
                   </li>
-                  <li onClick={() => setNav(!nav)}>
+                  <li>
                     <Link
+                      onClick={() => setNav(!nav)}
                       activeClass="active"
                       style={{ cursor: "pointer", textDecoration: "none" }}
                       to="about"
@@ -180,8 +183,9 @@ function Navbar() {
                       <span>Service</span>
                     </Link>
                   </li>
-                  <li onClick={() => setNav(!nav)}>
+                  <li>
                     <Link
+                      onClick={() => setNav(!nav)}
                       activeClass="active"
                       style={{ cursor: "pointer", textDecoration: "none" }}
                       to="contact"
