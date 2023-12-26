@@ -4,7 +4,7 @@ import { data } from "./data";
 function Work() {
   return (
     <>
-      <section className={`container ${styles.work_container}`}>
+      <section className={`container ${styles.work_container}`} id="work">
         <div className="row">
           <h1 className={`${styles.title}`}>My Works</h1>
           {data.map((d, i) => (

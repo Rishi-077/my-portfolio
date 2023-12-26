@@ -33,10 +33,17 @@
   padding: 20px 0px;
 }
 
-.nav_brand h5 {
+/* .nav_brand h5 {
   font-size: 28px;
   font-weight: 700;
   color: var(--white-color);
+} */
+
+.nav_brand h5 a {
+  font-size: 28px;
+  font-weight: 700;
+  text-decoration: none !important;
+  color: var(--white-color) !important;
 }
 
 .nav_route ul {
@@ -60,6 +67,7 @@
   display: inline-block;
   position: relative;
   color: var(--white-color);
+  text-decoration: none !important;
 }
 
 .nav_route ul li a:after {
@@ -81,15 +89,14 @@
   transform-origin: bottom left;
 }
 
-.nav_btn_div button {
+.nav_btn_div a {
   border: 1px solid var(--white-color);
   font-size: 16px;
   font-weight: 500;
   background-color: transparent;
   padding: 10px 30px;
   border-radius: 30px;
-  color: var(--white-color);
-
+  color: var(--white-color) !important;
   letter-spacing: 0.3px;
   display: inline-block;
   overflow: hidden;
@@ -98,12 +105,12 @@
   z-index: 1;
 }
 
-.nav_btn_div button:hover {
-  color: var(--orange-color);
+.nav_btn_div a:hover {
+  color: var(--orange-color) !important;
 }
 
-.nav_btn_div button:before,
-.nav_btn_div button:after {
+.nav_btn_div a:before,
+.nav_btn_div a:after {
   background: var(--white-color);
   transition: 0.3s ease;
   content: "";
@@ -111,13 +118,13 @@
   z-index: -1;
 }
 
-.nav_btn_div button:before {
+.nav_btn_div a:before {
   top: 0;
   right: 0;
   bottom: 100%;
   left: 0;
 }
-.nav_btn_div button:hover:before {
+.nav_btn_div a:hover:before {
   bottom: 0;
 }
 

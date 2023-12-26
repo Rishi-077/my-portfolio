@@ -6,8 +6,7 @@ const Home = () => {
   return (
     <>
       <section>
-
-        <div className={"row mx-0 " + styles.home_parent_div}>
+        <div className={"row mx-0 " + styles.home_parent_div} id="home">
           <div className="col-md-5 col-12 d-flex align-items-center justify-content-md-end justify-content-start">
             <div className={`${styles.home_img_div} me-lg-5 me-0`}>
               <img src={images.profile} alt="img" />
@@ -36,7 +35,16 @@ const Home = () => {
             <div className="col-lg-4 col-12 mt-lg-0 mt-sm-5 mt-3 d-flex flex-sm-row flex-column justicy-content-lg-center justify-content-between">
               <div className={`${styles.home_details} text-start text-lg-end`}>
                 <h6>Phone</h6>
-                <h3>+91 93610 87223</h3>
+                <h3>
+                  <a
+                    href="tel:rishikesan070@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ textDecoration: "none" }}
+                  >
+                    +91 93610 87223
+                  </a>
+                </h3>
               </div>
               <div
                 className={`${styles.home_details} mt-sm-0 mt-3 d-flex d-lg-none`}
@@ -62,7 +70,11 @@ const Home = () => {
                 <div className="me-3  text-end">
                   <h6 className={`${styles.email_h6}`}>Drop your Message</h6>
                   <h3 className={`${styles.email_h3}`}>
-                    <a href="mailto:rishikesan070@gmail.com">
+                    <a
+                      href="mailto:rishikesan070@gmail.com"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       rishikesan070@gmail.com
                     </a>
                   </h3>

@@ -62,7 +62,7 @@ function Contact() {
 
   return (
     <>
-      <section className={`container ${styles.contact_container}`}>
+      <section className={`container ${styles.contact_container}`} id="contact" >
         <div className="row">
           <h1 className={`${styles.title}`}>Get in touch</h1>
 

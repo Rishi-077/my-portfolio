@@ -25,28 +25,97 @@ function Navbar() {
         >
           <div className={`${styles.nav_div_parent}`}>
             <div className={`${styles.nav_brand}`}>
-              <h5 className="mb-0">Rishi.</h5>
+              <h5 className="mb-0">
+                {" "}
+                <Link
+                  activeClass="active"
+                  style={{ cursor: "pointer" }}
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  onClick={() => setNav(!nav)}
+                >
+                  Rishi.
+                </Link>
+              </h5>
             </div>
 
             <div className={`${styles.nav_route}  d-md-block d-none`}>
               <ul className={`${styles.nav_ul}`}>
                 <li>
-                  <Link>Home</Link>
+                  <Link
+                    activeClass="active"
+                    style={{ cursor: "pointer" }}
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    onClick={() => setNav(!nav)}
+                  >
+                    Home
+                  </Link>
                 </li>
                 <li>
-                  <Link>Work</Link>
+                  <Link
+                    activeClass="active"
+                    style={{ cursor: "pointer" }}
+                    to="work"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    onClick={() => setNav(!nav)}
+                  >
+                    Work
+                  </Link>
                 </li>
                 <li>
-                  <Link>Service</Link>
+                  <Link
+                    activeClass="active"
+                    style={{ cursor: "pointer" }}
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    onClick={() => setNav(!nav)}
+                  >
+                    Service
+                  </Link>
                 </li>
                 <li>
-                  <Link>Contact</Link>
+                  <Link
+                    activeClass="active"
+                    style={{ cursor: "pointer" }}
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    onClick={() => setNav(!nav)}
+                  >
+                    Contact
+                  </Link>
                 </li>
               </ul>
             </div>
 
             <div className={`${styles.nav_btn_div} d-md-block d-none`}>
-              <button>Let&apos;s Talk</button>
+              <Link
+                activeClass="active"
+                style={{ cursor: "pointer" }}
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={() => setNav(!nav)}
+              >
+                Let&apos;s Talk
+              </Link>
             </div>
           </div>
 
@@ -73,16 +142,56 @@ function Navbar() {
               >
                 <ul className={`${styles.nav_ul}`}>
                   <li onClick={() => setNav(!nav)}>
-                    <Link>Home</Link>
+                    <Link
+                      activeClass="active"
+                      style={{ cursor: "pointer" }}
+                      to="home"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                    >
+                      Home
+                    </Link>
                   </li>
                   <li onClick={() => setNav(!nav)}>
-                    <Link>Work</Link>
+                    <Link
+                      activeClass="active"
+                      style={{ cursor: "pointer" }}
+                      to="work"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                    >
+                      Work
+                    </Link>
                   </li>
                   <li onClick={() => setNav(!nav)}>
-                    <Link>Service</Link>
+                    <Link
+                      activeClass="active"
+                      style={{ cursor: "pointer" }}
+                      to="about"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                    >
+                      Service
+                    </Link>
                   </li>
                   <li onClick={() => setNav(!nav)}>
-                    <Link>Contact</Link>
+                    <Link
+                      activeClass="active"
+                      style={{ cursor: "pointer" }}
+                      to="contact"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                    >
+                      Contact
+                    </Link>
                   </li>
                 </ul>
               </div>

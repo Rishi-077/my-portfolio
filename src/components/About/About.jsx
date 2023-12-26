@@ -43,7 +43,7 @@ function About() {
 
   return (
     <>
-      <section className={`${styles.about_container_div}`}>
+      <section className={`${styles.about_container_div}`} id="about">
         <div className={`${styles.about_gray_bg}`}></div>
         <div className={`container ${styles.about_container}`}>
           <div className="row">
@@ -51,14 +51,18 @@ function About() {
               <div className={`${styles.about_content_div}`}>
                 <h2>About Me</h2>
                 <p className="py-4">
-                  In the mean time shall soon find out the cause of this: What
-                  was the epicurus towards their children; each of these can
-                  have a chain of not to have been taken in the broad plain in
-                  what is the reason why
+                  I believe that I would make a valuable addition to your team
+                  due to my passion for software development and my two years of
+                  experience in front-end development. I have a proven track
+                  record in{" "}
+                  <span style={{ color: "var(--orange-color)" }}>ReactJS</span>{" "}
+                  and{" "}
+                  <span style={{ color: "var(--orange-color)" }}>Angular</span>{" "}
+                  technologies.
                 </p>
                 <h6>
-                  &quot;What was the epicurus towards their children; each of
-                  these can have a chain.
+                  “Let us take you into a deeper experience, make a moment a
+                  lasting conveyable memory. Let us help build your tribe.”
                 </h6>
               </div>
             </div>
