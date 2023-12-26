@@ -37,7 +37,7 @@ const Home = () => {
                 <h6>Phone</h6>
                 <h3>
                   <a
-                    href="tel:rishikesan070@gmail.com"
+                    href="tel:+91 93610 87223"
                     target="_blank"
                     rel="noreferrer"
                     style={{ textDecoration: "none" }}
