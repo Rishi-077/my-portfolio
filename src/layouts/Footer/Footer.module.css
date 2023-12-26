@@ -54,6 +54,11 @@
   border-radius: 30px;
 }
 
+.btn_talk a {
+  color: var(--white-color) !important;
+  text-decoration: none !important;
+}
+
 /* copyright */
 
 .copyright_p {
